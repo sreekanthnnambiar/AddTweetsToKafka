@@ -8,10 +8,6 @@ var T = new Twit({
 })
 
 
-// Get twitter handle from API user request
-//var handle = param('handle');
-
-// Make call to Twitter API to get user's timeline
 T.get('statuses/retweeters/ids', {id:"843820568956682200" }, function(error, tweets, response){
   if (!error) {
     console.log(tweets); // return the tweets to the API user

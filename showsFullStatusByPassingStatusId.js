@@ -8,10 +8,6 @@ var client = new Twitter({
   timeout_ms:           60*1000,  // optional HTTP request timeout to apply to all requests.
 });
 
-// Get twitter handle from API user request
-//var handle = param('handle');
-
-// Make call to Twitter API to get user's timeline
 client.get('statuses/show/:id', {id:"880066697712984065" }, function(error, tweets, response){
   if (!error) {
     console.log(tweets); // return the tweets to the API user
